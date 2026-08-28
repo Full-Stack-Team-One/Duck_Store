@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckStore</title>
+
+  <!-- Fuente redondeada similar a la de la imagen -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nuestra hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================
+       HEADER: Barra superior con el logo y el ícono de carrito
+  ========================================== -->
+  <header class="header">
+    <span class="header__logo">DuckStore</span>
+    <span class="header__icon">🛍️</span>
+  </header>
+
+  <!-- =========================================
+       HERO: Sección grande con imagen de fondo, título y botón
+  ========================================== -->
+  <section class="hero">
+    <div class="hero__overlay">
+      <p class="hero__tag">GALLERY COLLECTION</p>
+      <h1 class="hero__title">The Art of the Duck</h1>
+      <p class="hero__text">
+        Discover meticulously crafted, limited-edition pieces that redefine
+        the iconic silhouette. A study in form, material, and restraint.
+      </p>
+      <button class="btn-primary">
+        EXPLORE COLLECTION <span>&rarr;</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- =========================================
+       NEW ARRIVALS: Título de sección + lista de productos
+  ========================================== -->
+  <main class="products">
+    <h2 class="products__title">New Arrivals</h2>
+    <p class="products__subtitle">The latest studies in texture and form.</p>
+
+    <!-- Tarjeta 1: Producto destacado (Edición Limitada) -->
+    <article class="card">
+      <div class="card__header">
+        <span class="badge badge--gold">LIMITED EDITION</span>
+        <span class="card__like">🤍</span>
+      </div>
+      <div class="card__image-wrapper">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqsbRBWUnuQnKUbpthB3-1BJJ_5xx3Z4m6cJ6I3-xh8AXZUaGBD8cdY3-v4yjIQiOIIOU2hWE5vzeBB7LioeCNpDbG_5vGXODG2F-NgAa0tCQkpjL8TTU8SuGsJr3Qp5QrtSNMebCw9pDZVl8FS6ngsaeYV2vKMZ0hT4q4ZmFYSVBJVlMjaAZgz0ArKf_K1w849juBSl9zjf8OA2AVk4tGx26jtDL6GhonrrA2pFMsC9GjeLR9igFZ" alt="Aurelia Glass Study" class="card__img">
+      </div>
+      <div class="card__footer">
+        <div>
+          <h3 class="card__name">Aurelia Glass Study</h3>
+          <p class="card__author">By Artist M. Laurent</p>
+        </div>
+        <span class="card__price">$450</span>
+      </div>
+    </article>
+
+    <!-- Tarjeta 2: Producto normal (Nueva Forma) -->
+    <article class="card">
+      <div class="card__header">
+        <span class="badge badge--gray">NEW FORM</span>
+        <span class="card__like">🤍</span>
+      </div>
+      <div class="card__image-wrapper">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWhd6eT_8qaHYL4WkGSt5B5Z-gxkvEoCzChMaYgEJ64LpIL2RIiKAn-k09doJDgBur1IYghDnggXHx1NziMAaoLEhkZ-txWRGawlphwyIUUYy4nlQ61ZCGV_E8KDUuXiOtJ15liDFUSZywGfVNrx_4JPLs2qP3_mriJMOYvwIaVavbmFCbdXbqQjm__0JkUopJCBk4nryPg5xU0fiaCh-83C_3o4oRYnj0peJ9ifsLFestcMCJAlk" alt="Polyhedron Blanc" class="card__img">
+      </div>
+      <div class="card__footer">
+        <div>
+          <h3 class="card__name">Polyhedron Blanc</h3>
+        </div>
+        <span class="card__price">$125</span>
+      </div>
+    </article>
+
+    <!-- Tarjeta 3: Producto normal (sin etiqueta) -->
+    <article class="card">
+      <div class="card__header card__header--right">
+        <span class="card__like">🤍</span>
+      </div>
+      <div class="card__image-wrapper">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSTrrBnmCOEZ9bX0-l2F4OJwD4NHjGKgGbzbP9i97wBZTGiNFKK3c8VrnjSPU_T4t_uAQL06NQpOgJ13KXNep_q3yo9RACLMV3dkEZHyFRROIyNwK4LL5Txd9KHxsQFs4BwRiIDGp1aodhByHknocUZ6leVA7kRrsr019gNORn1cT_I8Jt2Ye-x7h6gHCknWaFUfNMmY-3PTHA8iINlksOqy0b7J8GPAOgG3ooXOl_11ZUeKBbAHZc" alt="Solid Brass Anchor" class="card__img">
+      </div>
+      <div class="card__footer">
+        <div>
+          <h3 class="card__name">Solid Brass Anchor</h3>
+        </div>
+        <span class="card__price">$210</span>
+      </div>
+    </article>
+
+    <!-- Enlace para ver toda la colección -->
+    <a href="#" class="view-all">VIEW ALL COLLECTION &rsaquo;</a>
+  </main>
+
+  <!-- =========================================
+       BOTTOM NAV: Barra de navegación inferior (estilo app móvil)
+  ========================================== -->
+  <nav class="bottom-nav">
+    <a href="#" class="bottom-nav__item bottom-nav__item--active">●</a>
+    <a href="#" class="bottom-nav__item">▦</a>
+    <a href="#" class="bottom-nav__item">★</a>
+    <a href="#" class="bottom-nav__item">👤</a>
+  </nav>
+
+</body>
+</html>
