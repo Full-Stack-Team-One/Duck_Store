@@ -264,3 +264,17 @@ body {
   background-color: var(--color-badge-oro);
   color: #4a3c00;
 }
+
+/* DETALLE.html */
+.detalle { display: flex; flex-direction: column; gap: 20px; padding: 20px; }
+.detalle__imagen img { width: 100%; border-radius: 8px; }
+.detalle__info h1 { color: var(--color-marron); font-size: 24px; }
+.precio { font-weight: 700; font-size: 20px; color: var(--color-marron); }
+.stock { color: #0a7a00; font-size: 14px; }
+.descripcion { color: var(--color-gris-texto); line-height: 1.5; }
+@media (min-width: 768px) {
+  .detalle { flex-direction: row; }
+  .detalle__imagen, .detalle__info { flex: 1; }
+  .detalle__imagen img { box-shadow: 0 4px 20px rgba(0,0,0,0.08)}
+  .detalle__info .badge { background: #f3d36b; padding: 6px 12px; border-radius: 20px; font-size: 12px;}
+}

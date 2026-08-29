@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckStore</title>
+
+  <!-- Fuente redondeada similar a la de la imagen -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nuestra hoja de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================
+       HEADER: Barra superior con el logo y el ícono de carrito
+  ========================================== -->
+  <header class="header">
+    <a href="index.html" class="header__logo">DuckStore</a>
+    <a href="carrito.html" class="header__icon" aria-label="Ver Carrito">🛍️</a>
+  </header>
+
+  <!-- =========================================
+       HERO: Sección grande con imagen de fondo, título y botón
+  ========================================== -->
+
+  <!-- =========================================
+       NEW ARRIVALS: Título de sección + lista de productos
+  ========================================== -->
+  <main>
+    <section class="detalle">
+        <figure class="detalle__imagen">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1UTAAQKe0o6NxRi8o-MpVHTWtA9yH1Z5nW1QULLWzFdYhhgfc0w37PBRAa6RbkKL5lieTF6JftRT_dAu-J5TAJ3M4Oa_qNCQyFYIzqbLG7CRw7OeJk_iXCpXUUpqkYh3k6BzdmfAX5Y5QuJu0XV84cLPCxKhvWOkVB3q8WgdLm9Ss2YwlMQbqu2xNBTnThdy0hJnq96FoY2vcStasrFi_8N9lVK2H5bl3brtPxg3Up8wMG20s91G" alt="The Obsidian Monolith - Patito negro mate">
+            <figcaption>Vista Principal</figcaption>
+        </figure>
+        <div class="detalle__info">
+            <span class="badge">Edicion Limitada</span>
+            <h1>The Obsidian Monolith</h1>
+            <p class="precio">$145</p>
+            <p class="stock">Stock: 5 unidades disponibles</p>
+            <p class="descripcion">A study in form and void. Cast from reclaimed industrial...</p>
+            <button class="btn-primary">Añadir al carrito - $145</button>
+        </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       BOTTOM NAV: Barra de navegación inferior (estilo app móvil)
+  ========================================== -->
+  <nav class="bottom-nav" aria-label="Navegacion Principal">
+    <a href="index.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Inicio">●</a>
+    <a href="catalogo.html" class="bottom-nav__item" aria-label="Catalogo">▦</a>
+    <a href="contacto.html" class="bottom-nav__item" aria-label="Contacto">✉️</a>
+    <a href="detalle.html" class="bottom-nav__item" aria-label="Detalle">👤</a>
+  </nav>
+
+</body>
+</html>
