@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Nuestra hoja de estilos -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
   ========================================== -->
   <header class="header">
     <span class="header__logo">DuckStore</span>
-    <span class="header__icon">🛍️</span>
+    <a href="catalogo.html" class="header__icon" aria-label="Ver Bolsa">🛍️</a>
   </header>
 
   <!-- =========================================
@@ -32,9 +32,9 @@
         Discover meticulously crafted, limited-edition pieces that redefine
         the iconic silhouette. A study in form, material, and restraint.
       </p>
-      <button class="btn-primary">
-        EXPLORE COLLECTION <span>&rarr;</span>
-      </button>
+      <a href="catalogo.html" class="btn-primary" aria-label="Ir al catalogo">
+      EXPLORE COLLECTION <span>&rarr;</span>
+      </a>
     </div>
   </section>
 
@@ -97,17 +97,17 @@
     </article>
 
     <!-- Enlace para ver toda la colección -->
-    <a href="#" class="view-all">VIEW ALL COLLECTION &rsaquo;</a>
+    <a href="catalogo.html" class="view-all">VIEW ALL COLLECTION &rsaquo;</a>
   </main>
 
   <!-- =========================================
        BOTTOM NAV: Barra de navegación inferior (estilo app móvil)
   ========================================== -->
-  <nav class="bottom-nav">
-    <a href="#" class="bottom-nav__item bottom-nav__item--active">●</a>
-    <a href="#" class="bottom-nav__item">▦</a>
-    <a href="#" class="bottom-nav__item">★</a>
-    <a href="#" class="bottom-nav__item">👤</a>
+  <nav class="bottom-nav" aria-label="Navegacion Principal">
+    <a href="index.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Inicio">●</a>
+    <a href="catalogo.html" class="bottom-nav__item" aria-label="Catalogo">▦</a>
+    <a href="contacto.html" class="bottom-nav__item" aria-label="Contacto">✉️</a>
+    <a href="detalle.html" class="bottom-nav__item" aria-label="Detalle">👤</a>
   </nav>
 
 </body>
