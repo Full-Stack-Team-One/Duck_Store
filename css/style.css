@@ -388,6 +388,12 @@ body {
   color: var(--color-marron);
   margin-bottom: 4px;
 }
+.item__name:hover{
+  text-decoration: underline;
+}
+.details{
+  text-decoration: none;
+}
 
 .item__category {
   font-size: 13px;
