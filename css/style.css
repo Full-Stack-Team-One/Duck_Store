@@ -4,9 +4,9 @@
    fácilmente en todo el archivo.
 ========================================================== */
 :root {
-  --color-fondo: #d9fbf9;      /* Fondo turquesa clarito */
-  --color-texto: #2b2a26;      /* Texto oscuro general */
-  --color-marron: #6b5c1e;     /* Marrón/dorado oscuro para títulos y botón */
+  --color-fondo: #e2fffe;      /* Fondo turquesa clarito */
+  --color-texto: #002020;      /* Texto oscuro general */
+  --color-marron: #705d00;     /* Marrón/dorado oscuro para títulos y botón */
   --color-gris-texto: #7a7a72; /* Gris para texto secundario */
   --color-tarjeta: #ffffff;    /* Fondo blanco de las tarjetas */
   --color-badge-oro: #f3d36b;  /* Fondo del badge "LIMITED EDITION" */
@@ -277,4 +277,61 @@ body {
   .detalle__imagen, .detalle__info { flex: 1; }
   .detalle__imagen img { box-shadow: 0 4px 20px rgba(0,0,0,0.08)}
   .detalle__info .badge { background: #f3d36b; padding: 6px 12px; border-radius: 20px; font-size: 12px;}
+  .specs { flex-direction: row; flex-wrap: wrap;}
+  .spec-card { flex: 1; min-width: 180px;}
+}
+@media (min-width: 1280px) {
+  body { max-width: 1280px; padding-left: 80px; padding-right: 80px;}
+  .craftsmanship { margin: 0 -80px; padding: 64px 80px;}
+}
+.craftsmanship {
+  background-color: #fdf6ec;
+  text-align: center;
+  padding: 32px 20px;
+  margin: 0 -20px;
+}
+.craftsmanship h2 {
+  font-size: 14px;
+  color: var(--color-gris-texto);
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.craftsmanship p {
+  font-size: 14px;
+  color: var(--color-gris-texto);
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0 auto;
+}
+/* DETALLE: Specs - 3 cards blancas del mockup */
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 20px;
+}
+.spec-card {
+  background: var(--color-tarjeta);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e8e8e4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.spec-card span {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+.spec-card h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-marron);
+  margin-bottom: 6px;
+}
+.spec-card p {
+  font-size: 13px;
+  color: var(--color-gris-texto);
+  line-height: 1.5;
 }
