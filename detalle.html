@@ -1,74 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DuckStore</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Obsidian Monolith - DuckStore</title>
 
-  <!-- Fuente redondeada similar a la de la imagen -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
-  <!-- Nuestra hoja de estilos -->
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- =========================================
-       HEADER: Barra superior con el logo
-  ========================================== -->
-  <header class="header">
-    <a href="index.html" class="header__logo">DuckStore</a>
-  </header>
-
-  <main>
-    <section class="detalle">
-        <figure class="detalle__imagen">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1UTAAQKe0o6NxRi8o-MpVHTWtA9yH1Z5nW1QULLWzFdYhhgfc0w37PBRAa6RbkKL5lieTF6JftRT_dAu-J5TAJ3M4Oa_qNCQyFYIzqbLG7CRw7OeJk_iXCpXUUpqkYh3k6BzdmfAX5Y5QuJu0XV84cLPCxKhvWOkVB3q8WgdLm9Ss2YwlMQbqu2xNBTnThdy0hJnq96FoY2vcStasrFi_8N9lVK2H5bl3brtPxg3Up8wMG20s91G" alt="The Obsidian Monolith - Patito negro mate">
-        </figure>
-        <div class="detalle__info">
-            <span class="badge">Edicion Limitada</span>
-            <h1>The Obsidian Monolith</h1>
-            <p class="stock">Stock: 5 unidades disponibles</p>
-            <p class="descripcion">A study in form and void. Cast from reclaimed industrial...</p>
-            <p class="precio">$145</p>
-            
-        </div>
-    </section>
-    <section class="craftsmanship">
-            <h2>The Craftsmanship</h2>
-            <p>Inspired by Brutalist architecture... a profound silence in sculptural form.</p>
-    </section>
-    <section class="specs">
-      <article class="spec-card">
-        <span aria-hidden="true">▲</span>
-        <h3>Material</h3>
-        <p>High-density Vulcanized Reclaimed Rubber. Matte finish.</p>
-      </article>
-
-      <article class="spec-card">
-        <span aria-hidden="true">▦</span>
-        <h3>Dimensiones</h3>
-        <p> L: 120mm<br> W: 85mm<br> H: 90mm</p>
-      </article>
-
-      <article class="spec-card">
-        <span aria-hidden="true">👜</span>
-        <h3>Peso</h3>
-        <p>450 grams. Substantial hand-feel.</p>
-      </article>
-    </section>
-    <button class="btn-bag">Añadir al carrito - $145</button>
-  </main>
-
-  <!-- =========================================
-       BOTTOM NAV: Barra de navegación inferior (estilo app móvil)
-  ========================================== -->
-  <nav class="bottom-nav" aria-label="Navegacion Principal">
-    <a href="index.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Inicio">●</a>
-    <a href="catalogo.html" class="bottom-nav__item" aria-label="Catalogo">▦</a>
-    <a href="contacto.html" class="bottom-nav__item" aria-label="Contacto">✉️</a>
-    <a href="detalle.html" class="bottom-nav__item" aria-label="Detalle">👤</a>
+<!-- Header (compartido con el resto del sitio) -->
+<header class="header">
+  <a href="index.html" class="header__logo">DuckStore</a>
+  <nav class="header__nav">
+    <a href="index.html" class="header__nav-link">Inicio</a>
+    <a href="catalogo.html" class="header__nav-link">Ediciones</a>
+    <a href="#" class="header__nav-link">Contacto</a>
   </nav>
+</header>
 
+<main>
+
+  <!-- Hero del producto -->
+  <section class="detalle-hero">
+    <figure class="detalle-hero__image-wrap">
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhAF-eF3hp4zinu8GMjQMoBAZLshZ9S9S1SXLPUWuCdKg9c7bRer7G-3l15p0sIYPGsDjjg-ufsYfKqNclQhiD17zHAcziG10sPueZ3fsGMr1yUZFQP-pIiE6pWX03iMyuJQjkjE_sQx7yVbjmnlWKaLGxum6YwK_GV34g_waWVEBXDKKMa9csVUd-ZldYAduitQOKIBXUGUE55keAcDundE_6HgTtMz2jUarpi8utpf57SrUM9jt5"
+        alt="The Obsidian Monolith">
+    </figure>
+
+    <div class="detalle-hero__content">
+      <span class="badge">Limited Edition &ndash; 12 in stock</span>
+      <h1 class="detalle-hero__title">The Obsidian Monolith</h1>
+      <p class="detalle-hero__desc">
+        A study in form and void. Cast from reclaimed industrial rubber and hand-polished to a
+        flawless matte finish. This piece redefines the iconic silhouette through absolute reduction.
+      </p>
+      <p class="detalle-hero__price">$145</p>
+    </div>
+  </section>
+
+  <!-- Craftsmanship -->
+  <section class="story">
+    <div class="story__inner">
+      <h2>The Craftsmanship</h2>
+      <hr class="divider" aria-hidden="true">
+      <p>
+        Inspired by Brutalist architecture and the philosophy of subtractive sculpture, the
+        Obsidian Monolith challenges the playful origins of the rubber duck. Each piece undergoes
+        a 72-hour curing process in a specialized kiln, followed by meticulous hand-sanding by
+        master artisans to achieve a texture that absorbs light rather than reflecting it. The
+        result is a profound silence in sculptural form.
+      </p>
+    </div>
+  </section>
+
+  <!-- Specs -->
+  <section class="specs">
+    <article class="spec-card">
+      <span class="material-symbols-outlined spec-card__icon" aria-hidden="true">category</span>
+      <h3>Material</h3>
+      <p>High-density Vulcanized Reclaimed Rubber. Matte finish.</p>
+    </article>
+
+    <article class="spec-card">
+      <span class="material-symbols-outlined spec-card__icon" aria-hidden="true">straighten</span>
+      <h3>Dimensions</h3>
+      <p>L: 120mm <br> W: 85mm <br> H: 90mm</p>
+    </article>
+
+    <article class="spec-card">
+      <span class="material-symbols-outlined spec-card__icon" aria-hidden="true">weight</span>
+      <h3>Weight</h3>
+      <p>450 grams. Substantial hand-feel.</p>
+    </article>
+  </section>
+
+</main>
+
+<!-- Add to bag flotante (mobile) -->
+<button class="btn-add btn-add--full" id="addToBagMobile">ADD TO BAG &ndash; $145</button>
+
+<!-- Barra inferior de compra (desktop) -->
+<div class="bottom-bar">
+  <div class="bottom-bar__inner">
+    <div class="bottom-bar__product">
+      <div class="bottom-bar__thumb">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbQPKv6lxmTdQOEdL-td7RETpB5VxmLY1_ailBV7c1trbVdyfeshnzgWqUvEtmX4j74gqTCCqtUpTod5wnhLkwmHr--EGh190ZXP6RjQyKWb0VdPxGVWPp0s66AUAZ_zVa5KqEQNlSrC7NasKZhCPuBCq9LvALmbjllnVfC4uSL_BkBUValNORreuiYpfnLLJlQmcxhukKI3hTz71T-Hcrj11BQY0Ono2kXinKwtuSrIG38gMf6Kno"
+          alt="Miniatura">
+      </div>
+      <div>
+        <p class="bottom-bar__name">The Obsidian Monolith</p>
+        <p class="bottom-bar__price">$145</p>
+      </div>
+    </div>
+    <button class="btn-add" id="addToBagDesktop">ADD TO BAG</button>
+  </div>
+</div>
+
+<!-- Bottom nav (compartido con el resto del sitio) -->
+<nav class="bottom-nav" aria-label="Navegación principal">
+  <a href="index.html" class="bottom-nav__item" aria-label="Inicio">
+    <span class="material-symbols-outlined" aria-hidden="true">home_max</span>
+  </a>
+  <a href="catalogo.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Ediciones" aria-current="page">
+    <span class="material-symbols-outlined" aria-hidden="true">grid_view</span>
+  </a>
+  <a href="carrito.html" class="bottom-nav__item" aria-label="Bolsa de compras">
+    <span class="material-symbols-outlined" aria-hidden="true">shopping_bag</span>
+  </a>
+  <a href="#" class="bottom-nav__item" aria-label="Contacto">
+    <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
 </body>
 </html>
