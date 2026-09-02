@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckStore</title>
+
+  <!-- Fuente redondeada similar a la de la imagen -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nuestra hoja de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+
+  <!-- =========================================
+       HEADER: Barra superior con el logo y el ícono de carrito
+  ========================================== -->
+  <header class="header">
+    <span class="header__logo">DuckStore</span>
+    <!-- Enlaces visibles en vista PC -->
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-link">Inicio</a>
+      <a href="catalogo.html" class="header__nav-link">Ediciones</a>
+      <a href="contacto.html" class="header__nav-link">Contacto</a>
+    </nav>
+    <a href="carrito.html" class="header__icon2" aria-label="Ver Bolsa">🛍️</a>
+  </header>
+
+  <!-- =========================================
+       MAIN: Título + lista de productos + resumen
+  ========================================== -->
+  <main class="products2">
+    <h2 class="products__title">Tu Carrito</h2>
+    <p class="products__subtitle">2 pieces selected for acquisition.</p>
+
+    <!-- Contenedor flexible para separar productos y resumen en PC -->
+    <div class="products__container">
+      
+      <!-- Lista de tarjetas de productos -->
+      <div class="products__list">
+        
+        <!-- Tarjeta 1: The Obsidian Observer -->
+        <article class="card2">
+          <div class="card__image-wrapper2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmlP-qT7VGtS-PZ6dfKj8hp4fQ_SK4grD_ymYkcd2MIz9Z_bO1OaumZv4yNKK2YCNoyBtqStjtOkXaJ-RN-4H9JEQm-sNhae70hP0lpCStUuxwXmK8wnsYC4B3xuCu3NUPDWrjuqUFh092Hoeut49ZlXkbF1PdirVKjaU9SgweTKZd6PH9ZFV2832e4ttuPFdAC7Bm6nQY-9unGrCkhPIB9POpAH1so4VgwzWEAjkxVPVZfTkwBjQN" alt="The Obsidian Observer" class="card__img2">
+          </div>
+          <div class="card__footer2">
+            <div class="card__details">
+              <div class="card__text">
+                <h3 class="card__name">The Obsidian Observer</h3>
+                <p class="card__author">Matte Black • Artist Series</p>
+              </div>
+              <span class="card__price">$185</span>
+            </div>
+            <div class="card__actions">
+              <div class="card__counter">
+                <button class="counter__btn">−</button>
+                <span class="counter__value">1</span>
+                <button class="counter__btn">+</button>
+              </div>
+              <a href="#" class="card__remove">REMOVE</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: Ephemeral Float -->
+        <article class="card2">
+          <div class="card__image-wrapper2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjTAvQWHbUffwRrcdGqOSOAE8HEA45AP1ljXGp_w4fTNXD7GWuq9g3el2x2xLX8N2vXRq1h-YKbs1yWYzKxv4QAXVW_769GeNJbprHbi9UAw8S6zlpHrHqnrtqgKhAxoSLh2JzIEOWeQVHtaS0fWig2L_JwvQnWVfv1V0MFbMeGKuFTxHmWgRwBjLOF0zvGUMBxvcN1zLUyZo5cYmdhvYXM4Q80ZdpOZclG8iwU83ZeR8OKjzgu5yU" alt="Ephemeral Float" class="card__img2">
+          </div>
+          <div class="card__footer2">
+            <div class="card__details">
+              <div class="card__text">
+                <h3 class="card__name">Ephemeral Float</h3>
+                <p class="card__author">Frosted Glass • Limited Edition</p>
+              </div>
+              <span class="card__price">$320</span>
+            </div>
+            <div class="card__actions">
+              <div class="card__counter">
+                <button class="counter__btn">−</button>
+                <span class="counter__value">1</span>
+                <button class="counter__btn">+</button>
+              </div>
+              <a href="#" class="card__remove">REMOVE</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Tarjeta de Resumen (Summary) -->
+      <aside class="summary">
+        <h3 class="summary__title">Summary</h3>
+        
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <span>$505</span>
+        </div>
+
+        <div class="summary__row">
+          <span>Complimentary Shipping</span>
+          <span>$0</span>
+        </div>
+
+        <div class="summary__row">
+          <span>Taxes (Calculated at checkout)</span>
+          <span>—</span>
+        </div>
+
+        <hr class="summary__line">
+
+        <div class="summary__row summary__row--total">
+          <span>Total</span>
+          <span class="summary__price">$505</span>
+        </div>
+
+        <button class="btn-primary2 summary__btn">PROCEED TO CHECKOUT</button>
+
+        <p class="summary__secure">🔒 Secure Checkout</p>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- =========================================
+       BOTTOM NAV: Barra de navegación inferior (estilo app móvil)
+  ========================================== -->
+  <nav class="bottom-nav2" aria-label="Navegacion Principal">
+    <a href="index.html" class="bottom-nav__item2" aria-label="Inicio">
+      <span class="bottom-nav__icon">●</span>
+    </a>
+    <a href="catalogo.html" class="bottom-nav__item2" aria-label="Catalogo">
+      <span class="bottom-nav__icon">▦</span>
+    </a>
+    <a href="carrito.html" class="bottom-nav__item2 bottom-nav__item--active" aria-label="Bolsa">
+      <span class="bottom-nav__icon">🛍️</span>
+    </a>
+    <a href="contacto.html" class="bottom-nav__item2" aria-label="Contacto">
+      <span class="bottom-nav__icon">✉️</span>
+    </a>
+  </nav>
+
+</body>
+</html>

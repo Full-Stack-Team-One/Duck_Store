@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckStore - Catálogo</title>
+
+  <!-- Misma fuente que el resto del sitio -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos propia de esta página -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bodyc">
+
+  <!-- =========================================
+       HEADER: encabezado de la pagina
+  ========================================== -->
+  <header class="headerc">
+    <span class="header__logo">DuckStore</span>
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-link">Inicio</a>
+      <a href="catalogo.html" class="header__nav-link">Ediciones</a>
+      <a href="contacto.html" class="header__nav-link">Contacto</a>
+    </nav>
+    <a href="carrito.html" class="header__iconx" aria-label="Ver Bolsa">🛍️</a>
+  </header>
+
+  <!-- =========================================
+       INTRO: Título y descripción de la colección
+  ========================================== -->
+  <section class="intro">
+    <h1 class="intro__title">Limited Editions</h1>
+    <p class="intro__text">
+      A curated collection of highly exclusive, meticulously crafted rubber
+      ducks. Designed for the discerning collector.
+    </p>
+  </section>
+
+  <!-- =========================================
+       FILTROS: Categorías + orden
+  ========================================== -->
+  
+    <section class="filters">
+      <div class="filters__tabs">
+        <button class="filters__tab filters__tab--active">ALL EDITIONS</button>
+        <button class="filters__tab">ARTIST SERIES</button>
+        <button class="filters__tab">METALLICS</button>
+        <button class="filters__tab">AVANT-GARDE</button>
+      </div>
+      <div class="filters__sort">
+        SORT BY: LATEST <span>&#9662;</span>
+      </div>
+    </section>
+  
+
+  <!-- =========================================
+       CATÁLOGO: Lista de productos (una columna)
+  ========================================== -->
+  <main class="catalog">
+
+    <!-- Producto 1: con badge LIMITED EDITION -->
+    <article class="item">
+      <div class="item__image-wrapper">
+        <span class="badge">LIMITED EDITION</span>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW8zBbpgNT84ev0vr0O1OU0rIzlOJ8kD6-MB60rOurQMk-wmjRGdTMHNy_k6Ffu_gWaOGk0mV8SiecoI63Y_uUjVglzPPkg2b2sn_c1-rH3KB8nmDKVTrschCtcbT3P4M4WeGal7bqob6zGicYrCQFAm2uTpVwxCHSLUyZmd7WmBeD2YrXrKho0vWwS0NfBrpYnowNBHSS8oaBzNif7VKi2R66YLGrKUCgQUrWKkkhYD8OIS3_k6Mu" alt="The Obsidian" class="item__img">
+      </div>
+      <div class="item__info">
+        <div>
+          <a href="detalle.html" class="details"><h3 class="item__name">The Obsidian</h3></a>
+          <p class="item__category">Artist Series #01</p>
+        </div>
+        <span class="item__price">$120</span>
+      </div>
+    </article>
+
+    <!-- Producto 2: sin badge -->
+    <article class="item">
+      <div class="item__image-wrapper">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqvNaCyAGchiPWJnwOk05QG5-aEEWK7JNOSbuZAJETKkAA9iEYhFfPo4Vq1pSupeX-GP3IxupUJCOyxapp1nCV2VEQHkDZ3A_mGsSewYTGxj5jCIGIvcieQakLbnD_5nsVvn-pl6-9oGXZ7BfFkOJ7mfdpzT5hfgJstiP-4NFQdlzi6qZ_c4Shzy12PQbVaD4S0nXsQ6wArIIcZNs7HUoMZUEguPc8OqanGOfuWD361GHvUFQFryr-" alt="The Golden Mariner" class="item__img">
+      </div>
+      <div class="item__info">
+        <div>
+          <h3 class="item__name">The Golden Mariner</h3>
+          <p class="item__category">Metallics Collection</p>
+        </div>
+        <span class="item__price">$250</span>
+      </div>
+    </article>
+
+    <!-- Producto 3: con badge 1 OF 50 -->
+    <article class="item">
+      <div class="item__image-wrapper">
+        <span class="badge">1 OF 50</span>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuADUVeZpnkrzwwvp4nbPznsZWcoKmI4msyE-h2vzYyD-ioJy8Wj0HRG3D9yCVk8LprIFBeskFVKR-s4Dx3AJ-5pHq97BsEruYtanzPiO65zshuyTNqQ3RQue8NN9jj3TiE8_8Q45G3_V3tLPmm7Xlj4snBd3qn_ENyFyo4OmXu4WywwnYUISHxiEh_3zUJseH21ugkAfRvw3TDFXxXJ-2o4-mdAUKon_iDpQFp3pLopU3JySdwY9BCe" alt="Ghost of the Bath" class="item__img">
+      </div>
+      <div class="item__info">
+        <div>
+          <h3 class="item__name">Ghost of the Bath</h3>
+          <p class="item__category">Avant-Garde</p>
+        </div>
+        <span class="item__price">$180</span>
+      </div>
+    </article>
+
+    <!-- Producto 4: sin badge -->
+    <article class="item">
+      <div class="item__image-wrapper">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgcNNpvqJOLQkla1gwYmZR6VbxnrfSFSHSDoPZPfUaGX1jI-UcNaTJGFavjamazywzpTTTU5i_CpKVwNi_Vh-ftSBiGocFjqHC9zvKjxu8oVR2ZB3R7ZKy0PAVbIYf93Yagvrc0VcPXhv2NsFdjs7Pz0fhWQ4Qor_NEemA1wBIs0bGmVzb8bD6aXja9godNEOfFU6VfPGiF6c_E4FwU5pqcm7BwFeKZ2HYeZvuZ8_IaEisF6qDiJAV" alt="Dazzle Camo" class="item__img">
+      </div>
+      <div class="item__info">
+        <div>
+          <h3 class="item__name">Dazzle Camo</h3>
+          <p class="item__category">Artist Series #02</p>
+        </div>
+        <span class="item__price">$95</span>
+      </div>
+    </article>
+
+    <!-- Producto 5: sin badge -->
+    <article class="item">
+      <div class="item__image-wrapper">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW6p6DIq7duy7f942-XnPMwPzF6u098nIvRcMbicThTAgBMRty6r_wTDXiwIAnXkJFMWY9r1ancJDdZhTLRqS0SiZbOICQ1eVQNXBrECir0tayWGlhtfGxozCa1e9elKTfXUMK1gz7y0nUEXSfH_BEXIImpa83w3KuUBIXBip3fFSg4_QAko5BgXBWPkAzcREVhqAY6M23MMo6OIIVzV39tAnFto5xWFtGnHavBYWpVQZH6g6LhjT5" alt="Brushed Steel" class="item__img">
+      </div>
+      <div class="item__info">
+        <div>
+          <h3 class="item__name">Brushed Steel</h3>
+          <p class="item__category">Metallics Collection</p>
+        </div>
+        <span class="item__price">$140</span>
+      </div>
+    </article>
+
+    <!-- Producto 6: agotado (SOLD OUT), se ve apagado -->
+    <article class="item item--sold-out">
+      <div class="item__image-wrapper">
+        <span class="badge">SOLD OUT</span>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCe1n5vfYA1fW80Ey_jso_204GbDEZH8Ar76Hy2A01sclYd1BM4-ig4QhVkvHE9PutUbg2VXYVEHq3KrFBQSZoYnS7xyyK3LpQWhTVDIBe0l4DJSBZ-86fYzauj30flijb-FgibKuFL9dlWRbdfWbThK9ax6NCGXUzkJACgLfszbYOSyKcl5gFVvYmuZhDyNNMOCtIxLSxnNUkpnel2waWZ40DHO3r6ohHbf0QG-CxcjCXxGA5OP9U" alt="The Sculptor" class="item__img">
+      </div>
+      <div class="item__info">
+        <div>
+          <h3 class="item__name">The Sculptor</h3>
+          <p class="item__category">Avant-Garde</p>
+        </div>
+        <span class="item__price">$300</span>
+      </div>
+    </article>
+
+    <!-- Botón para cargar más productos -->
+    <button class="btn-primary">DISCOVER MORE</button>
+
+  </main>
+
+  <!-- =========================================
+       BOTTOM NAV:
+  ========================================== -->
+  <nav class="bottom-navc" aria-label="Navegacion Principal">
+    <a href="index.html" class="bottom-nav__item" aria-label="Inicio">●</a>
+    <a href="catalogo.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Catalogo">▦</a>
+    <a href="carrito.html" class="bottom-nav__item" aria-label="Bolsa">🛍️</a>
+    <a href="contacto.html" class="bottom-nav__item" aria-label="Contacto">✉️</a>
+  </nav>
+
+</body>
+</html>
