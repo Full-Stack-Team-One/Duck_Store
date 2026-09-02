@@ -4,9 +4,9 @@
    fácilmente en todo el archivo.
 ========================================================== */
 :root {
-  --color-fondo: #d9fbf9;      /* Fondo turquesa clarito */
-  --color-texto: #2b2a26;      /* Texto oscuro general */
-  --color-marron: #6b5c1e;     /* Marrón/dorado oscuro para títulos y botón */
+  --color-fondo: #e2fffe;      /* Fondo turquesa clarito */
+  --color-texto: #002020;      /* Texto oscuro general */
+  --color-marron: #705d00;     /* Marrón/dorado oscuro para títulos y botón */
   --color-gris-texto: #7a7a72; /* Gris para texto secundario */
   --color-tarjeta: #ffffff;    /* Fondo blanco de las tarjetas */
   --color-badge-oro: #f3d36b;  /* Fondo del badge "LIMITED EDITION" */
@@ -38,7 +38,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--color-fondo);
   padding: 18px 20px;
 }
@@ -264,6 +264,56 @@ body {
   background-color: var(--color-badge-oro);
   color: #4a3c00;
 }
+
+/* DETALLE.html */
+.detalle-hero { display:flex; flex-direction:column; gap:20px; padding:20px; }
+.detalle-hero__image-wrap { order:-1; background:#fef9ef; padding:16px; border-radius:16px; }
+.detalle-hero__image-wrap img { width:100%; border-radius:12px; display:block; }
+.detalle-hero__content { display:flex; flex-direction:column; align-items:flex-start; gap:16px; }
+.detalle-hero__content .badge { position:static; background:var(--color-badge-azul); color:var(--color-badge-azul-texto); }
+.detalle-hero__title { color:var(--color-marron); font-size:28px; line-height:34px; font-weight:700; }
+.detalle-hero__desc { color:var(--color-gris-texto); line-height:1.6; font-size:16px; max-width:480px; }
+.detalle-hero__price { font-weight:700; font-size:24px; color:var(--color-marron); }
+
+.story { background:#fdf6ec; text-align:center; padding:32px 20px; margin:0 -20px; }
+.story__inner { max-width:380px; margin:0 auto; }
+.story h2 { font-size:22px; color:var(--color-marron); margin-bottom:12px; }
+.divider { width:48px; height:1px; background:#cec6b2; border:none; margin:0 auto 12px; }
+.story p { font-size:14px; color:var(--color-gris-texto); line-height:1.6; }
+
+.specs { display:flex; flex-direction:column; gap:16px; padding:24px 20px; }
+.spec-card { background:#fff; border-radius:12px; padding:20px; text-align:center; border:1px solid #cec6b2; }
+.spec-card__icon { color:var(--color-gris-texto); font-size:28px; }
+.spec-card h3 { color:var(--color-marron); font-size:13px; letter-spacing:0.5px; margin:8px 0 4px; }
+.spec-card p { color:var(--color-gris-texto); font-size:14px; line-height:1.5; }
+
+.btn-add { background:var(--color-marron); color:#fff; border:none; padding:16px; border-radius:999px; font-weight:700; cursor:pointer; }
+.btn-add--full { position:fixed; bottom:96px; left:50%; transform:translateX(-50%); width:calc(100% - 40px); max-width:480px; z-index:40; }
+
+.bottom-bar { display:none; }
+.bottom-bar__inner { display:flex; justify-content:space-between; align-items:center; width:100%; }
+.bottom-bar__product { display:flex; align-items:center; gap:16px; }
+.bottom-bar__thumb img { width:48px; height:48px; border-radius:8px; object-fit:cover; }
+.bottom-bar__name { color:var(--color-marron); font-size:17px; font-weight:600; }
+.bottom-bar__price { color:var(--color-gris-texto); font-size:14px; }
+
+@media (min-width:768px){
+  .bottom-bar { display:flex; position:fixed; bottom:0; left:0; width:100%; background:#fff; border-top:1px solid #cec6b2; padding:16px 80px; z-index:40; }
+  .btn-add--full { display:none; }
+  .detalle-hero { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:40px; }
+  .detalle-hero__image-wrap { order:0; }
+  .specs { flex-direction:row; flex-wrap:wrap; }
+  .spec-card { flex:1; min-width:180px; }
+  .story { padding:40px 60px; }
+  .bottom-nav { display:none; }
+  .header { display:flex; justify-content:space-between; align-items:center; padding:18px 48px; }
+  .header__nav { display:flex; gap: 24px;}
+}
+@media (min-width:1280px){
+  body { max-width:1280px; padding-left:80px; padding-right:80px; }
+  .story { margin:0 -80px; padding:64px 80px; }
+}
+
 /* ==========================================================
    PÁGINA CATÁLOGO (catalogo.html)
    Reutiliza las variables definidas arriba en :root y agrega
@@ -645,6 +695,7 @@ body {
 ========================================================== */
 @media (min-width: 768px) {
   body {
+    max-width: 960px;
     padding-bottom: 0;
   }
 
