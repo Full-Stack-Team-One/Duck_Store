@@ -802,3 +802,39 @@ body {
          }
         
 }
+
+/* ================= PÁGINA CONTACTO (contacto.html) ================= */
+:root{--color-error:#ba1a1a;--color-secondary:#0b6780}
+.header{position:relative}
+.header__menu-btn{background:none;border:none;font-size:22px;color:var(--color-marron);cursor:pointer;display:flex;align-items:center}
+.header__nav-link--active{color:var(--color-marron);font-weight:700;border-bottom:2px solid var(--color-marron);padding-bottom:2px}
+.header__nav--mobile-open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;width:100%;background:var(--color-tarjeta);padding:16px 20px;box-shadow:0 4px 6px rgba(0,0,0,.06);z-index:40;gap:16px}
+.contact-hero{text-align:center;padding:32px 20px 16px}
+.contact-hero__title{font-size:28px;font-weight:700;color:var(--color-marron);margin-bottom:12px}
+.contact-hero__text{font-size:15px;line-height:1.6;color:var(--color-gris-texto);max-width:480px;margin:0 auto}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:20px;padding:0 20px 32px}
+.contact-card{background:var(--color-tarjeta);border-radius:10px;padding:24px;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.contact-card__title{font-size:20px;font-weight:700;color:var(--color-marron);margin-bottom:16px}
+.contact-info{display:flex;flex-direction:column;gap:20px}
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:13px;font-weight:700;letter-spacing:.5px;color:var(--color-texto);margin-bottom:6px}
+.form-input,.form-textarea{width:100%;background:#d2f5f4;border:1px solid var(--color-borde);border-radius:6px;padding:10px 12px;font-family:inherit;font-size:14px;color:var(--color-texto);transition:border-color .2s,box-shadow .2s}
+.form-textarea{resize:vertical;min-height:100px}
+.form-input:focus,.form-textarea:focus{outline:none;border-color:var(--color-marron);box-shadow:0 0 0 2px rgba(112,93,0,.2)}
+.form-input--error{border-color:var(--color-error)}
+.form-error{display:none;color:var(--color-error);font-size:13px;margin-top:6px}
+.form-error--visible{display:block}
+.btn-submit{width:100%;margin-top:8px;border:none}
+.info-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.info-item{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--color-gris-texto);line-height:1.5}
+.info-item a{color:inherit;text-decoration:none}
+.info-item a:hover{text-decoration:underline}
+.info-item__icon{color:var(--color-secondary);font-size:20px;flex-shrink:0}
+.contact-map{border-radius:10px;overflow:hidden;border:1px solid var(--color-borde);height:220px}
+.contact-map img{width:100%;height:100%;object-fit:cover;display:block}
+@media(min-width:768px){
+  .header__menu-btn{display:none}
+  .contact-grid{grid-template-columns:1fr 1fr;max-width:960px;margin:0 auto;padding:0 24px 48px;align-items:start}
+  .contact-hero{padding:48px 20px 24px}
+  .contact-hero__title{font-size:36px}
+}
