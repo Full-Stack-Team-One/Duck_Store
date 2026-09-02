@@ -275,6 +275,30 @@ body {
   --color-badge-azul: #9ae1fe;
   --color-badge-azul-texto: #08667e;
 }
+.header__iconx{
+  display: none;
+}
+.bottom-navc {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--color-tarjeta);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.06);
+}
+.headerc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-fondo);
+  padding: 18px 20px;
+}
 
 /* ---------- Introducción (título + texto) ---------- */
 .intro {
@@ -420,7 +444,7 @@ body {
 
 /* Botón "DISCOVER MORE" centrado, reutiliza .btn-primary ya existente arriba */
 .catalog .btn-primary {
-  display: block;
+  display: flex;
   margin: 20px auto 10px;
 }
 /* PARTE DEL CARRITO*/
@@ -695,4 +719,35 @@ body {
   .bottom-nav2 {
     display: none;
   }
+}
+/* ==========================================================
+   RESPONSIVE: VISTA PC (Pantallas a partir de 768px)catalogo
+========================================================== */
+@media (min-width: 768px){
+        .bodyc{
+          max-width: none;
+         }
+         .header__iconx{
+          display: flex;
+         }
+         .headerc{
+          justify-content: space-between;
+         }
+
+         .bottom-navc{
+          display: none;
+         }
+         .filters{
+          display: flex;
+          justify-content: space-between;
+         }
+         .catalog{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 20px;
+         }
+         .catalog .btn-primary{
+          grid-column: 2;
+         }
+        
 }

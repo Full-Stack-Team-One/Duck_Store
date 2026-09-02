@@ -11,13 +11,19 @@
   <!-- Hoja de estilos propia de esta página -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bodyc">
 
   <!-- =========================================
        HEADER: encabezado de la pagina
   ========================================== -->
-  <header class="header">
+  <header class="headerc">
     <span class="header__logo">DuckStore</span>
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-link">Inicio</a>
+      <a href="catalogo.html" class="header__nav-link">Ediciones</a>
+      <a href="contacto.html" class="header__nav-link">Contacto</a>
+    </nav>
+    <a href="carrito.html" class="header__iconx" aria-label="Ver Bolsa">🛍️</a>
   </header>
 
   <!-- =========================================
@@ -34,17 +40,19 @@
   <!-- =========================================
        FILTROS: Categorías + orden
   ========================================== -->
-  <div class="filters">
-    <div class="filters__tabs">
-      <button class="filters__tab filters__tab--active">ALL EDITIONS</button>
-      <button class="filters__tab">ARTIST SERIES</button>
-      <button class="filters__tab">METALLICS</button>
-      <button class="filters__tab">AVANT-GARDE</button>
-    </div>
-    <div class="filters__sort">
-      SORT BY: LATEST <span>&#9662;</span>
-    </div>
-  </div>
+  
+    <section class="filters">
+      <div class="filters__tabs">
+        <button class="filters__tab filters__tab--active">ALL EDITIONS</button>
+        <button class="filters__tab">ARTIST SERIES</button>
+        <button class="filters__tab">METALLICS</button>
+        <button class="filters__tab">AVANT-GARDE</button>
+      </div>
+      <div class="filters__sort">
+        SORT BY: LATEST <span>&#9662;</span>
+      </div>
+    </section>
+  
 
   <!-- =========================================
        CATÁLOGO: Lista de productos (una columna)
@@ -146,7 +154,7 @@
   <!-- =========================================
        BOTTOM NAV:
   ========================================== -->
-  <nav class="bottom-nav" aria-label="Navegacion Principal">
+  <nav class="bottom-navc" aria-label="Navegacion Principal">
     <a href="index.html" class="bottom-nav__item" aria-label="Inicio">●</a>
     <a href="catalogo.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Catalogo">▦</a>
     <a href="carrito.html" class="bottom-nav__item" aria-label="Bolsa">🛍️</a>
