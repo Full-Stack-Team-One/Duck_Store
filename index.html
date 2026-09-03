@@ -1,113 +1,313 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DuckStore</title>
 
-  <!-- Fuente redondeada similar a la de la imagen -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>DuckStore | The Art of the Duck</title>
 
-  <!-- Nuestra hoja de estilos -->
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- =========================================
-       HEADER: Barra superior con el logo y el ícono de carrito
-  ========================================== -->
-  <header class="header">
-    <span class="header__logo">DuckStore</span>
-  </header>
-
-  <!-- =========================================
-       HERO: Sección grande con imagen de fondo, título y botón
-  ========================================== -->
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+ <div id="header"></div>
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
   <section class="hero">
+
     <div class="hero__overlay">
-      <p class="hero__tag">GALLERY COLLECTION</p>
-      <h1 class="hero__title">The Art of the Duck</h1>
-      <p class="hero__text">
-        Discover meticulously crafted, limited-edition pieces that redefine
-        the iconic silhouette. A study in form, material, and restraint.
+
+      <p class="hero__tag">
+        DUCKSTORE COLLECTION
       </p>
-      <a href="catalogo.html" class="btn-primary" aria-label="Ir al catalogo">
-      EXPLORE COLLECTION <span>&rarr;</span>
-      </a>
+
+      <h1 class="hero__title">
+        The Art of the Duck
+      </h1>
+
+      <p class="hero__text">
+        Discover carefully selected duck sculptures and
+        collectible pieces designed for people who appreciate
+        simple forms, creativity and character.
+      </p>
+
+      <div class="hero__buttons">
+
+        <a href="pages/catalogo.html" class="btn-primary">
+          Explore Collection →
+        </a>
+
+        <a href="#new-arrivals" class="btn-secondary">
+          Discover More
+        </a>
+
+      </div>
+
     </div>
+
   </section>
 
-  <!-- =========================================
-       NEW ARRIVALS: Título de sección + lista de productos
-  ========================================== -->
-  <main class="products">
-    <h2 class="products__title">New Arrivals</h2>
-    <p class="products__subtitle">The latest studies in texture and form.</p>
 
-    <!-- Tarjeta 1: Producto destacado (Edición Limitada) -->
-    <article class="card">
-      <div class="card__header">
-        <span class="badge badge--gold">LIMITED EDITION</span>
-        <span class="card__like">🤍</span>
+  <!-- =====================================================
+       INTRODUCTION
+  ====================================================== -->
+  <section class="intro">
+
+    <p class="intro__tag">
+      OUR COLLECTION
+    </p>
+
+    <h2 class="intro__title">
+      Small objects.<br>
+      Big personality.
+    </h2>
+
+    <p class="intro__text">
+      Each piece is selected for its unique shape,
+      material and personality. Welcome to a collection
+      where the simple duck becomes a work of art.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       NEW ARRIVALS
+  ====================================================== -->
+  <main class="products" id="new-arrivals">
+
+    <div class="products__heading">
+
+      <div>
+        <p class="products__tag">
+          JUST ARRIVED
+        </p>
+
+        <h2 class="products__title">
+          New Arrivals
+        </h2>
+
+        <p class="products__subtitle">
+          The latest studies in texture and form.
+        </p>
       </div>
-      <div class="card__image-wrapper">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqsbRBWUnuQnKUbpthB3-1BJJ_5xx3Z4m6cJ6I3-xh8AXZUaGBD8cdY3-v4yjIQiOIIOU2hWE5vzeBB7LioeCNpDbG_5vGXODG2F-NgAa0tCQkpjL8TTU8SuGsJr3Qp5QrtSNMebCw9pDZVl8FS6ngsaeYV2vKMZ0hT4q4ZmFYSVBJVlMjaAZgz0ArKf_K1w849juBSl9zjf8OA2AVk4tGx26jtDL6GhonrrA2pFMsC9GjeLR9igFZ" alt="Aurelia Glass Study" class="card__img">
-      </div>
-      <div class="card__footer">
-        <div>
-          <h3 class="card__name">Aurelia Glass Study</h3>
-          <p class="card__author">By Artist M. Laurent</p>
+
+      <a href="pages/catalogo.html" class="products__link">
+        View all →
+      </a>
+
+    </div>
+
+
+    <!-- =================================================
+         PRODUCT GRID
+    ================================================== -->
+    <div class="products__grid">
+
+
+      <!-- PRODUCT 1 -->
+      <article class="card">
+
+        <div class="card__header">
+
+          <span class="badge badge--gold">
+            LIMITED EDITION
+          </span>
+          <button class="card__like" aria-label="Añadir a favoritos">
+            ♡
+          </button>
+
         </div>
-        <span class="card__price">$450</span>
-      </div>
-    </article>
 
-    <!-- Tarjeta 2: Producto normal (Nueva Forma) -->
-    <article class="card">
-      <div class="card__header">
-        <span class="badge badge--gray">NEW FORM</span>
-        <span class="card__like">🤍</span>
-      </div>
-      <div class="card__image-wrapper">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWhd6eT_8qaHYL4WkGSt5B5Z-gxkvEoCzChMaYgEJ64LpIL2RIiKAn-k09doJDgBur1IYghDnggXHx1NziMAaoLEhkZ-txWRGawlphwyIUUYy4nlQ61ZCGV_E8KDUuXiOtJ15liDFUSZywGfVNrx_4JPLs2qP3_mriJMOYvwIaVavbmFCbdXbqQjm__0JkUopJCBk4nryPg5xU0fiaCh-83C_3o4oRYnj0peJ9ifsLFestcMCJAlk" alt="Polyhedron Blanc" class="card__img">
-      </div>
-      <div class="card__footer">
-        <div>
-          <h3 class="card__name">Polyhedron Blanc</h3>
+        <div class="card__image-wrapper">
+
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqsbRBWUnuQnKUbpthB3-1BJJ_5xx3Z4m6cJ6I3-xh8AXZUaGBD8cdY3-v4yjIQiOIIOU2hWE5vzeBB7LioeCNpDbG_5vGXODG2F-NgAa0tCQkpjL8TTU8SuGsJr3Qp5QrtSNMebCw9pDZVl8FS6ngsaeYV2vKMZ0hT4q4ZmFYSVBJVlMjaAZgz0ArKf_K1w849juBSl9zjf8OA2AVk4tGx26jtDL6GhonrrA2pFMsC9GjeLR9igFZ"
+            alt="Aurelia Glass Study"
+            class="card__img"
+          >
+
         </div>
-        <span class="card__price">$125</span>
-      </div>
-    </article>
 
-    <!-- Tarjeta 3: Producto normal (sin etiqueta) -->
-    <article class="card">
-      <div class="card__header card__header--right">
-        <span class="card__like">🤍</span>
-      </div>
-      <div class="card__image-wrapper">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSTrrBnmCOEZ9bX0-l2F4OJwD4NHjGKgGbzbP9i97wBZTGiNFKK3c8VrnjSPU_T4t_uAQL06NQpOgJ13KXNep_q3yo9RACLMV3dkEZHyFRROIyNwK4LL5Txd9KHxsQFs4BwRiIDGp1aodhByHknocUZ6leVA7kRrsr019gNORn1cT_I8Jt2Ye-x7h6gHCknWaFUfNMmY-3PTHA8iINlksOqy0b7J8GPAOgG3ooXOl_11ZUeKBbAHZc" alt="Solid Brass Anchor" class="card__img">
-      </div>
-      <div class="card__footer">
-        <div>
-          <h3 class="card__name">Solid Brass Anchor</h3>
+        <div class="card__footer">
+
+          <div>
+            <h3 class="card__name">
+              Aurelia Glass Study
+            </h3>
+
+            <p class="card__author">
+              By Artist M. Laurent
+            </p>
+          </div>
+
+          <span class="card__price">
+            $450
+          </span>
+
         </div>
-        <span class="card__price">$210</span>
-      </div>
-    </article>
 
-    <!-- Enlace para ver toda la colección -->
-    <a href="catalogo.html" class="view-all">VIEW ALL COLLECTION &rsaquo;</a>
+      </article>
+
+
+      <!-- PRODUCT 2 -->
+      <article class="card">
+
+        <div class="card__header">
+
+          <span class="badge badge--gray">
+            NEW FORM
+          </span>
+
+          <button class="card__like" aria-label="Añadir a favoritos">
+            ♡
+          </button>
+
+        </div>
+
+        <div class="card__image-wrapper">
+
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWhd6eT_8qaHYL4WkGSt5B5Z-gxkvEoCzChMaYgEJ64LpIL2RIiKAn-k09doJDgBur1IYghDnggXHx1NziMAaoLEhkZ-txWRGawlphwyIUUYy4nlQ61ZCGV_E8KDUuXiOtJ15liDFUSZywGfVNrx_4JPLs2qP3_mriJMOYvwIaVavbmFCbdXbqQjm__0JkUopJCBk4nryPg5xU0fiaCh-83C_3o4oRYnj0peJ9ifsLFestcMCJAlk"
+            alt="Polyhedron Blanc"
+            class="card__img"
+          >
+
+        </div>
+
+        <div class="card__footer">
+
+          <div>
+            <h3 class="card__name">
+              Polyhedron Blanc
+            </h3>
+
+            <p class="card__author">
+              Contemporary Form
+            </p>
+          </div>
+
+          <span class="card__price">
+            $125
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 3 -->
+      <article class="card">
+
+        <div class="card__header card__header--right">
+
+          <button class="card__like" aria-label="Añadir a favoritos">
+            ♡
+          </button>
+
+        </div>
+
+        <div class="card__image-wrapper">
+
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSTrrBnmCOEZ9bX0-l2F4OJwD4NHjGKgGbzbP9i97wBZTGiNFKK3c8VrnjSPU_T4t_uAQL06NQpOgJ13KXNep_q3yo9RACLMV3dkEZHyFRROIyNwK4LL5Txd9KHxsQFs4BwRiIDGp1aodhByHknocUZ6leVA7kRrsr019gNORn1cT_I8Jt2Ye-x7h6gHCknWaFUfNMmY-3PTHA8iINlksOqy0b7J8GPAOgG3ooXOl_11ZUeKBbAHZc"
+            alt="Solid Brass Anchor"
+            class="card__img"
+          >
+
+        </div>
+
+        <div class="card__footer">
+
+          <div>
+            <h3 class="card__name">
+              Solid Brass Anchor
+            </h3>
+
+            <p class="card__author">
+              Brass Collection
+            </p>
+          </div>
+
+          <span class="card__price">
+            $210
+          </span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <a href="pages/catalogo.html" class="view-all">
+      VIEW ALL COLLECTION →
+    </a>
+
   </main>
 
-  <!-- =========================================
-       BOTTOM NAV: Barra de navegación inferior (estilo app móvil)
-  ========================================== -->
-  <nav class="bottom-nav" aria-label="Navegacion Principal">
-    <a href="index.html" class="bottom-nav__item bottom-nav__item--active" aria-label="Inicio">●</a>
-    <a href="catalogo.html" class="bottom-nav__item" aria-label="Catalogo">▦</a>
-    <a href="carrito.html" class="bottom-nav__item" aria-label="Bolsa">🛍️</a>
-    <a href="contacto.html" class="bottom-nav__item" aria-label="Contacto">✉️</a>
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <div id="footer"></div>
+  <!-- =====================================================
+       MOBILE NAVIGATION
+  ====================================================== -->
+  <nav class="bottom-nav" aria-label="Navegación principal"> 
+    <a href="index.html" class="bottom-nav__item bottom-nav__item--active"> 
+      <span class="bottom-nav__icon" aria-hidden="true"> 
+        <svg viewBox="0 0 24 24"> 
+          <path d="M3 10.5 12 3l9 7.5"></path> 
+          <path d="M5 9.5V21h14V9.5"></path> 
+          <path d="M9 21v-7h6v7"></path>  
+        </svg>
+      </span>
+      <span class="bottom-nav__label">Inicio</span> 
+    </a> 
+    
+    <a href="pages/catalogo.html" class="bottom-nav__item">
+      <span class="bottom-nav__icon" aria-hidden="true"> 
+        <svg viewBox="0 0 24 24"> 
+          <rect x="4" y="4" width="6" height="6"></rect> 
+          <rect x="14" y="4" width="6" height="6"></rect> 
+          <rect x="4" y="14" width="6" height="6"></rect> 
+          <rect x="14" y="14" width="6" height="6"></rect> 
+        </svg> </span> <span class="bottom-nav__label">Catálogo</span> 
+      </a> 
+      
+      <a href="pages/contacto.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon" aria-hidden="true"> 
+          <svg viewBox="0 0 24 24"> 
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect> 
+            <path d="m3 7 9 6 9-6"></path> 
+          </svg> 
+        </span> 
+        <span class="bottom-nav__label">Contacto</span> 
+      </a> 
+      
+      <a href="pages/detalle.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon" aria-hidden="true"> 
+          <svg viewBox="0 0 24 24"> 
+            <circle cx="12" cy="12" r="9"></circle> 
+            <circle cx="12" cy="9" r="3"></circle> 
+            <path d="M7 19c.8-3 2.5-4.5 5-4.5s4.2 1.5 5 4.5"></path> 
+          </svg> 
+        </span> 
+        <span class="bottom-nav__label">Perfil</span> 
+      </a> 
   </nav>
-
+<script src="scripts/main.js"></script>
 </body>
 </html>

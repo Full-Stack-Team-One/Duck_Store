@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckStore | Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+ <div id="header"></div>
+
+  <main class="contact-page">
+    <section class="contact-intro">
+      <h1>Get in Touch</h1>
+      <p>
+        We’d love to hear from you. Drop us a line regarding your rubber duck needs,
+        wholesale inquiries, or just to say hello.
+      </p>
+    </section>
+
+    <div class="contact-layout">
+      <section class="contact-card">
+        <h2>Send a Message</h2>
+
+        <form class="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" aria-label="Name">
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" aria-label="Email">
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" aria-label="Message"></textarea>
+          </label>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </section>
+
+      <div class="contact-side">
+        <section class="headquarters">
+          <h2>Our Headquarters</h2>
+
+          <ul class="headquarters__list">
+            <li>
+              <span class="headquarters__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s6-5.7 6-11a6 6 0 1 0-12 0c0 5.3 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </span>
+              <a href="#" data-contact-type="address" data-contact-value="123 Pond View Lane, Duckburg, WA 98101">123 Pond View Lane, Duckburg, WA 98101</a>
+            </li>
+
+            <li>
+              <span class="headquarters__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <a href="mailto:quack@duckstore.com">quack@duckstore.com</a>
+            </li>
+
+            <li>
+              <span class="headquarters__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 4h4l2 5-2.3 1.8a15 15 0 0 0 7.5 7.5L16 16l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <a href="#" data-contact-type="phone" data-contact-value="+34610101010">+34 610 10 10 10</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="map-card" aria-label="DuckStore map location">
+          <svg viewBox="0 0 800 500" role="img" aria-label="Stylized map of Duckburg">
+            <rect width="800" height="500" fill="#d7e7bd"/>
+            <path d="M0 120C120 80 170 220 250 180C340 135 350 80 500 110C620 135 700 90 800 115V0H0Z" fill="#b7d995"/>
+            <path d="M40 220C150 185 180 260 260 245C325 232 360 250 420 220C500 180 540 150 720 190V500H40Z" fill="#b9d7cc"/>
+            <path d="M120 0C130 60 110 120 90 180C80 210 95 280 90 330C85 380 145 430 170 500H0V0Z" fill="#d8edd0"/>
+            <path d="M670 0C710 60 720 120 770 190C795 225 795 260 790 300C770 390 715 470 690 500H800V0Z" fill="#d8edd0"/>
+            <path d="M247 52C260 90 255 118 245 145C235 175 200 186 190 220C180 250 180 290 160 310C141 330 100 350 80 382C65 407 76 440 100 460C177 480 245 487 330 480C380 476 408 450 433 430C458 410 500 390 520 355C540 320 585 295 620 260C650 230 685 185 700 150C705 140 715 104 707 82C695 46 650 35 615 40C585 44 577 70 548 80C514 90 471 80 455 55C430 20 362 18 330 45C306 68 285 55 247 52Z" fill="#d9e7ba" stroke="#c2bc8d" stroke-width="4"/>
+            <path d="M320 25C330 95 290 148 320 197C350 245 453 235 520 289C577 332 590 395 635 445" fill="none" stroke="#7bc8d6" stroke-width="18" stroke-linecap="round"/>
+            <path d="M110 110C250 150 340 180 420 130C480 95 550 100 660 115" fill="none" stroke="#7bc8d6" stroke-width="16" stroke-linecap="round"/>
+            <path d="M190 420C225 365 352 320 480 330C550 335 620 350 720 395" fill="none" stroke="#7bc8d6" stroke-width="16" stroke-linecap="round"/>
+            <path d="M200 150C150 210 160 280 200 340" fill="none" stroke="#6fb4c3" stroke-width="12" stroke-linecap="round"/>
+            <path d="M600 160C635 200 640 255 615 315" fill="none" stroke="#6fb4c3" stroke-width="12" stroke-linecap="round"/>
+            <path d="M120 320C180 290 260 305 305 350C352 398 462 398 540 350C610 308 675 318 730 350" fill="none" stroke="#6fb4c3" stroke-width="12" stroke-linecap="round"/>
+            <path d="M100 80L238 120L338 58L474 79L610 70L718 110" fill="none" stroke="#e7d77a" stroke-width="4" stroke-dasharray="6 10"/>
+            <path d="M58 255L166 212L274 228L348 205L470 215L570 192L686 214" fill="none" stroke="#e7d77a" stroke-width="4" stroke-dasharray="6 10"/>
+            <circle cx="400" cy="250" r="60" fill="#b8d5a6" stroke="#a6c477" stroke-width="4"/>
+            <circle cx="400" cy="250" r="44" fill="#9cc9d0" stroke="#b2c2a7" stroke-width="4"/>
+            <g fill="#f1e5bb" stroke="#d5b96a" stroke-width="2">
+              <rect x="120" y="150" width="38" height="28" rx="8"/>
+              <rect x="180" y="90" width="48" height="33" rx="8"/>
+              <rect x="610" y="110" width="42" height="30" rx="8"/>
+              <rect x="640" y="270" width="58" height="38" rx="10"/>
+              <rect x="195" y="330" width="58" height="38" rx="10"/>
+              <rect x="500" y="350" width="62" height="42" rx="10"/>
+            </g>
+            <g fill="#d4b764" stroke="#c2a05a" stroke-width="2">
+              <path d="M200 220h48v16h-48z"/>
+              <path d="M350 120h52v20h-52z"/>
+              <path d="M534 232h56v18h-56z"/>
+              <path d="M405 410h60v20h-60z"/>
+            </g>
+            <g fill="#8ec1a0" stroke="#6aa87b" stroke-width="2">
+              <circle cx="258" cy="108" r="14"/>
+              <circle cx="518" cy="112" r="16"/>
+              <circle cx="560" cy="332" r="15"/>
+              <circle cx="200" cy="420" r="14"/>
+              <circle cx="680" cy="220" r="15"/>
+            </g>
+          </svg>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <div id="footer"></div>
+
+  <script src="../scripts/contact.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
