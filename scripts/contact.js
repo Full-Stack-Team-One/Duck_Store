@@ -1,5 +1,5 @@
-import { headerDeploy } from "./main.js";
-import { footerDeploy } from "./main.js";
+import { headerDeploy } from "./functions.js";
+import { footerDeploy } from "./functions.js";
 headerDeploy('../components/header.html')
 footerDeploy('../components/footer.html')
 document.addEventListener('DOMContentLoaded', () => {
