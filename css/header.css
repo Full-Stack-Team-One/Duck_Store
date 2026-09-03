@@ -1,0 +1,299 @@
+/* ==========================================================
+HEADER
+========================================================== */
+
+.header {
+width: 100%;
+min-height: 70px;
+padding: 0 40px;
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+background-color: #ffffff;
+border-bottom: 1px solid #e5e5e5;
+
+box-sizing: border-box;
+}
+
+/* ==========================================================
+LOGO
+========================================================== */
+
+.header__logo {
+color: var(--color-marron);
+text-decoration: none;
+
+font-size: 24px;
+font-weight: 700;
+
+white-space: nowrap;
+}
+
+/* ==========================================================
+NAVIGATION
+========================================================== */
+
+.header__nav {
+display: flex;
+align-items: center;
+gap: 35px;
+}
+
+.header__link {
+position: relative;
+
+color: var(--color-gris-texto);
+text-decoration: none;
+
+font-size: 16px;
+font-weight: 500;
+
+padding: 8px 0;
+
+transition: color 0.2s ease;
+}
+
+.header__link:hover {
+color: var(--color-marron);
+}
+
+.header__link--active {
+color: var(--color-marron);
+font-weight: 700;
+}
+
+.header__link--active::after {
+content: "";
+
+position: absolute;
+left: 0;
+bottom: 0;
+
+width: 100%;
+height: 2px;
+
+background-color: var(--color-marron);
+}
+
+/* ==========================================================
+ACTIONS
+========================================================== */
+
+.header__actions {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+/* ==========================================================
+SHOPPING ICON
+========================================================== */
+
+.header__icon {
+width: 42px;
+height: 42px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: var(--color-texto);
+text-decoration: none;
+
+font-size: 20px;
+
+border-radius: 50%;
+
+transition:
+background-color 0.2s ease,
+transform 0.2s ease;
+}
+
+.header__icon:hover {
+background-color: var(--color-crema);
+color: var(--color-marron);
+
+transform: translateY(-2px);
+}
+
+/* ==========================================================
+HAMBURGER
+========================================================== */
+
+.header__menu {
+display: none;
+
+width: 42px;
+height: 42px;
+
+padding: 8px;
+
+border: none;
+background: transparent;
+
+cursor: pointer;
+
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+gap: 5px;
+}
+
+.header__menu span {
+display: block;
+
+width: 22px;
+height: 2px;
+
+background-color: var(--color-marron);
+
+transition:
+transform 0.3s ease,
+opacity 0.3s ease;
+}
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 768px) {
+
+.header {
+padding: 0 24px;
+}
+
+.header__nav {
+gap: 20px;
+}
+
+.header__link {
+font-size: 15px;
+}
+
+.header__logo {
+font-size: 21px;
+}
+}
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+.header {
+position: relative;
+
+
+min-height: 65px;
+padding: 0 20px;
+
+
+}
+
+.header__logo {
+font-size: 22px;
+}
+
+/* Hide desktop navigation */
+
+.header__nav {
+display: none;
+
+
+position: absolute;
+
+top: 65px;
+left: 0;
+
+width: 100%;
+
+padding: 15px 20px;
+
+flex-direction: column;
+align-items: stretch;
+
+gap: 0;
+
+background-color: #ffffff;
+
+border-bottom: 1px solid #e5e5e5;
+
+box-sizing: border-box;
+
+z-index: 1000;
+
+
+}
+
+/* Show menu when JavaScript adds .is-open */
+
+.header__nav.is-open {
+display: flex;
+}
+
+.header__link {
+width: 100%;
+
+
+padding: 15px 5px;
+
+font-size: 15px;
+
+
+}
+
+.header__link--active::after {
+display: none;
+}
+
+.header__actions {
+gap: 4px;
+}
+
+/* Show hamburger */
+
+.header__menu {
+display: flex;
+}
+
+/* ========================================================
+HAMBURGER → X
+======================================================== */
+
+.header__menu.is-open span:nth-child(1) {
+transform: translateY(7px) rotate(45deg);
+}
+
+.header__menu.is-open span:nth-child(2) {
+opacity: 0;
+}
+
+.header__menu.is-open span:nth-child(3) {
+transform: translateY(-7px) rotate(-45deg);
+}
+}
+
+/* ==========================================================
+SMALL MOBILE
+========================================================== */
+
+@media (max-width: 400px) {
+
+.header {
+padding: 0 15px;
+}
+
+.header__logo {
+font-size: 20px;
+}
+
+.header__icon,
+.header__menu {
+width: 38px;
+height: 38px;
+}
+}
