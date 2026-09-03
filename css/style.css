@@ -497,7 +497,9 @@ body {
   display: flex;
   margin: 20px auto 10px;
 }
-/* PARTE DEL CARRITO*/
+/* ==========================================================
+   CSS PARA LA PARTE DEL CARRITO
+========================================================== */
 .body{
   max-width: none;
   margin: 0;
@@ -715,7 +717,7 @@ body {
   transition: background-color 0.2s;
 }
 /* ==========================================================
-   RESPONSIVE: VISTA PC (Pantallas a partir de 768px)
+   RESPONSIVE: VISTA PC (Pantallas a partir de 768px) PARA EL CARRITO
 ========================================================== */
 @media (min-width: 768px) {
   body {
