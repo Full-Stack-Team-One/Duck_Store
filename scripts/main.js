@@ -7,7 +7,7 @@
 const headerContainer = document.getElementById("header");
 
 if (headerContainer) {
-fetch('../components/header.html')
+fetch('Duck_Store/components/header.html')
 .then(response => {
 if (!response.ok) {
 throw new Error(`Header request failed: ${response.status}`);
@@ -49,7 +49,7 @@ throw new Error(`Header request failed: ${response.status}`);
 const footerContainer = document.getElementById("footer");
 
 if (footerContainer) {
-  fetch('../components/footer.html')
+  fetch('Duck_Store/components/footer.html')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Footer request failed: ${response.status}`);
