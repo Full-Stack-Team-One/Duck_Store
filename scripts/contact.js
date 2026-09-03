@@ -1,3 +1,7 @@
+import { headerDeploy } from "./main.js";
+import { footerDeploy } from "./main.js";
+headerDeploy('../components/header.html')
+footerDeploy('../components/footer.html')
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.querySelector('.contact-form');
 

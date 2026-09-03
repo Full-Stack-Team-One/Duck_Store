@@ -3,64 +3,67 @@
 // HEADER COMPONENT
 // ==============================
 
+export function headerDeploy(route) {
+  const headerContainer = document.getElementById("header");
 
-const headerContainer = document.getElementById("header");
+  if (headerContainer) {
+    fetch(route)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Header request failed: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then((data) => {
+        headerContainer.innerHTML = data;
 
-if (headerContainer) {
-fetch('Duck_Store/components/header.html')
-.then(response => {
-if (!response.ok) {
-throw new Error(`Header request failed: ${response.status}`);
-}
-  return response.text();
-})
-.then(data => {
-  headerContainer.innerHTML = data;
+        // Mobile menu
+        const menuButton = document.getElementById("menuButton");
+        const mainNav = document.getElementById("mainNav");
 
-  // Mobile menu
-  const menuButton = document.getElementById("menuButton");
-  const mainNav = document.getElementById("mainNav");
+        if (menuButton && mainNav) {
+          menuButton.addEventListener("click", () => {
+            const isOpen = menuButton.classList.toggle("is-open");
 
-  if (menuButton && mainNav) {
-    menuButton.addEventListener("click", () => {
-      const isOpen = menuButton.classList.toggle("is-open");
+            mainNav.classList.toggle("is-open", isOpen);
 
-      mainNav.classList.toggle("is-open", isOpen);
-
-      menuButton.setAttribute("aria-expanded", isOpen);
-      menuButton.setAttribute(
-        "aria-label",
-        isOpen ? "Close menu" : "Open menu"
-      );
-    });
+            menuButton.setAttribute("aria-expanded", isOpen);
+            menuButton.setAttribute(
+              "aria-label",
+              isOpen ? "Close menu" : "Open menu",
+            );
+          });
+        }
+      })
+      .catch((error) => {
+        console.error("Unable to load the header component.", error);
+      });
   }
-})
-.catch(error => {
-  console.error("Unable to load the header component.", error);
-});
-
 }
 
 
 // ==============================
 // FOOTER COMPONENT
 // ==============================
+export function footerDeploy(routef) {
+  const footerContainer = document.getElementById("footer");
 
-const footerContainer = document.getElementById("footer");
+  if (footerContainer) {
+    fetch(routef)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Footer request failed: ${response.status}`);
+        }
 
-if (footerContainer) {
-  fetch('Duck_Store/components/footer.html')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Footer request failed: ${response.status}`);
-      }
-
-      return response.text();
-    })
-    .then(data => {
-      footerContainer.innerHTML = data;
-    })
-    .catch(error => {
-      console.error("Unable to load the footer component.", error);
-    });
+        return response.text();
+      })
+      .then((data) => {
+        footerContainer.innerHTML = data;
+      })
+      .catch((error) => {
+        console.error("Unable to load the footer component.", error);
+      });
+  }
 }
+headerDeploy('./components/header.html')
+footerDeploy('./components/footer.html')
